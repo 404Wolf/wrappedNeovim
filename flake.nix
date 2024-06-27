@@ -25,6 +25,7 @@
               wrapProgram $out/bin/nvim \
                 --set PATH ${
                   pkgs.lib.makeBinPath [
+                    pkgs.git
                     pkgs.nixd
                     pkgs.nodePackages.prettier
                     pkgs.nodePackages_latest.typescript-language-server
