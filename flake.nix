@@ -16,14 +16,13 @@
       system:
       let
         pkgs = import nixpkgs { inherit system; };
-        wrapProgram = pkgs.wrapProgram;
       in
       {
         packages.default = pkgs.neovim.overrideAttrs (
           finalAttrs: previousAttrs: {
             postFixup = ''
               ${previousAttrs.postFixup or ""}
-              ${wrapProgram} $out/bin/nvim \
+              wrapProgram $out/bin/nvim \
                 --set PATH ${
                   pkgs.lib.makeBinPath [
                     pkgs.nixd
