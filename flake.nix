@@ -43,9 +43,12 @@
                     pkgs.vscode-langservers-extracted
                     pkgs.gosimports
                     pkgs.beautysh
+                    pkgs.rustc
+                    pkgs.cargo
                     pkgs.rust-analyzer
                     pkgs.ripgrep
                     pkgs.fd
+                    pkgs.rustfmt
                   ]
                 }
             '';
