@@ -43,6 +43,7 @@
                     pkgs.vscode-langservers-extracted
                     pkgs.gosimports
                     pkgs.beautysh
+                    pkgs.rust-analyzer
                   ]
                 }
             '';
