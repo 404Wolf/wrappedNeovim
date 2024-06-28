@@ -44,6 +44,8 @@
                     pkgs.gosimports
                     pkgs.beautysh
                     pkgs.rust-analyzer
+                    pkgs.ripgrep
+                    pkgs.fd
                   ]
                 }
             '';
