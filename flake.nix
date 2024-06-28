@@ -23,7 +23,7 @@
             postFixup = ''
               ${previousAttrs.postFixup or ""}
               wrapProgram $out/bin/nvim \
-                --set PATH ${
+                --set PATH $PATH:${
                   pkgs.lib.makeBinPath [
                     pkgs.git
                     pkgs.nixd
