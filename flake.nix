@@ -49,6 +49,8 @@
                     pkgs.ripgrep
                     pkgs.fd
                     pkgs.rustfmt
+                    pkgs.tree-sitter
+                    pkgs.pandoc
                   ]
                 }
             '';
